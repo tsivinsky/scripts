@@ -1,0 +1,23 @@
+{
+  "name": "@tsivinsky17/scripts",
+  "version": "0.0.1",
+  "description": "This repo includes scripts that I find to be useful.",
+  "main": "index.js",
+  "bin": {
+    "scr": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsivinsky/scripts.git"
+  },
+  "keywords": [
+    "scripts",
+    "cli"
+  ],
+  "author": "Daniil Tsivinsky <daniil@tsivinsky.com> (https://tsivinsky.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsivinsky/scripts/issues"
+  },
+  "homepage": "https://github.com/tsivinsky/scripts#readme"
+}
