@@ -1,10 +1,10 @@
 {
   "name": "@tsivinsky17/scripts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "This repo includes scripts that I find to be useful.",
   "main": "index.js",
   "bin": {
-    "scr": "./index.js"
+    "scr": "index.js"
   },
   "repository": {
     "type": "git",
