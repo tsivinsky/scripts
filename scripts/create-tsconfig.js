@@ -6,16 +6,19 @@ const cp = require("child_process");
 
 const root = process.cwd();
 
+// Cd into root directory
+process.chdir(root);
+
 // Check if yarn is installed
 const yarnVersion = cp.execSync("yarn -v").toString("utf-8").replace("\n", "");
 const isYarnInstalled = /[0-9]+.[0-9]+.[0-9]+/.test(yarnVersion);
 
 // Install typescript and @tsivinsky17/tsconfig as devDependencies
-const packageManager = Boolean(
+const packageManager =
   isYarnInstalled && fs.existsSync(path.join(root, "yarn.lock"))
     ? "yarn"
-    : "npm"
-);
+    : "npm";
+
 const commandForInstall = packageManager === "yarn" ? "yarn add" : "npm i";
 cp.execSync(`${commandForInstall} -D typescript @tsivinsky17/tsconfig`);
 
