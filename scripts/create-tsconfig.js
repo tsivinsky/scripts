@@ -22,7 +22,10 @@ cp.execSync(`${commandForInstall} -D typescript @tsivinsky17/tsconfig`);
 // Create new tsconfig.json file
 const tsconfig = {
   extends: "@tsivinsky17/tsconfig",
-
+  compilerOptions: {
+    rootDir: "src",
+    outDir: "dist",
+  },
   exclude: ["node_modules", "dist"],
   include: ["src"],
 };
